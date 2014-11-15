@@ -3,6 +3,27 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Contato</title>
     <link rel="stylesheet" href="styles.css" type="text/css">
+
+    <script
+    src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCFzsCl5K5YMHvPRyxuAAw0FQa-2dAmbfE&sensor=true">
+    </script>
+
+    <script>
+var myCenter=new google.maps.LatLng(-19.930193, -43.947175);
+function initialize()
+{
+var mapProp = {
+        center:new google.maps.LatLng(51.508742,-0.120850),
+        zoom:5,
+        mapTypeId:google.maps.MapTypeId.ROADMAP
+};
+
+    var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
 </head>
 
 
@@ -29,10 +50,17 @@
             <div id="content">
                 <h2>Contato</h2>
                 <p>
-                    
-                </p>
-                
+                    <b>Telefone Residencial:</b><br>(31)1234-5678<br>
+                    <b>Telefone Celular:</b><br>(31)8765-4321<br>
+                    <b>Endereço Residencial:</b><br>Av. Olegario Maciel, 123-Lourdes-Belo Horizonte-Brasil<br>
+                    <b>Endereço Trabalho:</b><br>CEFET-MG - Campus II - Av. Amazonas, 8000,Gameleira,Belo Horizonte,Brasil<br>
+                    <b>Endereço Faculdade:</b><br>CEFET-MG - Campus II - Av. Amazonas, 8000,Gameleira,Belo Horizonte,Brasil<br>
+                </p>    
+                <div id="googleMap" style="width:500px;height:380px;"></div>            
             </div>
+
+
+
             <div class="sidebar">
                 <ul><li>
                         <h4><span>Navigate</span></h4>
