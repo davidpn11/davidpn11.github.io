@@ -533,3 +533,11 @@ div#footer-links p {
 	text-decoration: underline;
 }
 
+.linetrought{
+	text-decoration: line-through;
+}
+
+.teste{
+	border: 1px solid red;
+}
+
