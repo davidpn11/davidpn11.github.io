@@ -2,25 +2,20 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Projetos</title>
+    
     <link rel="stylesheet" href="styles.css" type="text/css">
-    <link rel="stylesheet" href="dist/magnific-popup.css" type="text/css">
     <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="dist/jquery.magnific-popup.js"></script>
-    <script type="text/javascript" src="dist/jquery.magnific-popup.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery.js"></script>
+
+    
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="ekko-lightbox.min.css" type="text/css">
+    <script type="text/javascript" src="ekko-lightbox.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+
 </head>
-
-
 <body>
 
-<script>
-
-$(document).ready(function(){
-  $(".resize").click(function(){
-    $(this).animate({width:300, height:300},300);
-  });
-});
-</script>
 
 <div class="wrapper subpage">
     <div id="container">
@@ -57,11 +52,34 @@ $(document).ready(function(){
 
                 <h3>Coloração de Grafos utilizando a Heurística GRASP</h3>
                 <p> Outro projeto que desenvolvido em matlab, foi criado um programa para verificar o número mínimo de cores necessário para o problema de coloração de grafos, que é quando cada nó de um grafo deve ter uma cor e nós adjacentes não podem ter a mesma cor. Por ser um problema com complexidade alta, foi utilizado a Heurística GRASP para encontra uma solução boa para o problema.</p>
-                            
+                
+                <div id="imagens-projeto">
+                <h3>Imagens</h3>
+                    <a href="images/cafe.png" data-toggle="lightbox" data-title="Café Científico" data-footer="Projeto 1" data-type="image">
+                        <img src="images/cafe.png" class="img-resposive" width="150" height="150">
+                    </a>
+                    <a href="images/cuda.jpeg" data-toggle="lightbox" data-title="Paralelismo" data-footer="Projeto 2" data-type="image">
+                        <img src="images/cuda.jpeg" class="img-resposive" width="150" height="150">
+                    </a>
+                    <a href="images/perceptron.jpg" data-toggle="lightbox" data-title="Perceptron" data-footer="Projeto 3" data-type="image">
+                        <img src="images/perceptron.jpg" class="img-resposive" width="150" height="150">
+                    </a>
+                    <a href="images/bomamigo.png" data-toggle="lightbox" data-title="Aplicativo Bom Amigo" data-footer="Projeto 4" data-type="image">
+                        <img src="images/bomamigo.png" class="img-resposive" width="150" height="150">
+                    </a>
+                    <a href="images/coloracao.png" data-toggle="lightbox" data-title="Coloração de grafos" data-footer="Projeto 5" data-type="image">
+                        <img src="images/coloracao.png" class="img-resposive" width="150" height="150">
+                    </a>
+                </div>
             
-
-           <img src="images/profile.jpg" onclick="myFunction(this)"class="resize" width="150" height="150">
-
+                
+                          
+                <!--
+                <div id="imagem">
+                    <a href="images/profile.jpg" data-toggle="lightbox" data-type="image">
+                    <img src="images/profile.jpg" onclick="resize()" class="resize" width="150" height="150"></a>
+                </div>
+-->
            
             
                </div>
